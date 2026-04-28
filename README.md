@@ -8,7 +8,7 @@
 
 **Live app:** [chase.poojas.dev](https://chase.poojas.dev)  
 **Loom (90s):** [Link placeholder]  
-**Stack:** Mastra · Claude Sonnet 4.5 · Next.js 15 · Drizzle + Neon · Vercel
+**Stack:** Mastra + Inngest · Claude Sonnet 4.5 · Next.js 15 · Drizzle + Neon · Vercel
 
 **Technical deep-dives:** [ARCHITECTURE.md](ARCHITECTURE.md) · [DESIGN_DOC.md](DESIGN_DOC.md) · [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)
 
@@ -28,7 +28,7 @@ Every agent action is **human-readable, replayable, and challengeable**.
 |--------|-------------------------|
 | **Traceability** | Each call writes an **audit row** (CoT-style reasoning, latency, **$/run**). |
 | **Prompt versioning** | Every agent call is tagged with **`prompt_version`** so evals can catch regressions. |
-| **Branching** | A **multi-agent Mastra workflow** keeps routing explicit instead of relying on one mega-prompt. |
+| **Branching** | **Mastra workflows** define agent steps and routing; **Inngest** provides durable async event execution. |
 
 ---
 
