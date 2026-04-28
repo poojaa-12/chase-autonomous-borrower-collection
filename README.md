@@ -119,7 +119,5 @@ The image is built from a multi-stage `Dockerfile` using Next.js standalone outp
 
 ## Contact
 
-**Sai Pooja Sabbani** — MS Computer Science, University of Florida (graduating May 2026)  
-F-1 (STEM OPT eligible)
 
 Built in **four days** because the wrong-period failure mode kept nagging — it looks easy from the outside and breaks naive systems. Happy to walk through design tradeoffs.
