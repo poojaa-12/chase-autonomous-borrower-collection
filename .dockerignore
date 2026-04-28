@@ -1,0 +1,11 @@
+.git
+.github
+.next
+node_modules
+coverage
+drizzle
+evals
+*.log
+.env
+.env.local
+.DS_Store

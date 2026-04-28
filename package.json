@@ -1,0 +1,47 @@
+{
+  "name": "chase",
+  "version": "1.0.0",
+  "description": "**Codename:** chase   **Target role:** Founding Engineer @ Proximitty   **Author:** Sai Pooja Sabbani (MS CS @ UF)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest",
+    "ci": "npm run lint && npm run typecheck && npm run test && npm run build",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push",
+    "db:migrate": "drizzle-kit migrate",
+    "inngest:dev": "inngest-cli dev -u http://localhost:3000/api/inngest",
+    "docker:build": "docker build -t chase:local ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.91.1",
+    "@neondatabase/serverless": "^1.1.0",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^0.45.2",
+    "inngest": "^4.2.5",
+    "next": "^15.5.15",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitest/coverage-v8": "^3.2.4",
+    "drizzle-kit": "^0.31.10",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.6",
+    "inngest-cli": "^1.18.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^3.2.4"
+  }
+}
